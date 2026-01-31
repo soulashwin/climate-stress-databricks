@@ -154,6 +154,25 @@ This demonstrates a complete **Database ↔ AI ↔ Database** pipeline.
 - Python
 
 ---
+## 📊 Analytics Dashboard
+
+An interactive Databricks SQL dashboard that visualizes long-term temperature trends, climate anomalies, and ML-based risk signals.
+
+Includes:
+
+Average yearly temperature trends (1880–present)
+
+Temperature anomaly analysis relative to historical baselines
+
+Climate stress heatmap by country and year
+
+Comparison of temperature anomalies across Normal vs High Climate Risk periods
+
+The dashboard connects SQL-based analytics with machine learning outputs to surface early climate stress patterns in an interpretable, decision-ready format.
+
+Dashboard link- https://dbc-52e8cb63-b41f.cloud.databricks.com/dashboardsv3/01f0fcf9e53a1ccd8bbfceff826bfa0c/published?o=7474647823112261
+
+---
 🙌 Acknowledgements
 
 Kaggle for the Global Climate Change dataset
